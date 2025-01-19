@@ -116,7 +116,10 @@ For this task, we added a new task 3, that simulated a computational workload by
 
 After executing it, we saw the following output:
 
-#raw(read("src/readings/5.txt"), block: true)
+#[
+	#show raw: set text(size: 8pt)
+	#raw(read("src/readings/5.txt"), block: true)
+]
 
 We can see that although task 2 was successfully executed a few times, task 1 is never executed, because task 3 has higher priority, and never yields control back by sleeping.
 
