@@ -1,0 +1,35 @@
+Reading temperature Task 1
+Reading humidity Task 2
+Reading sensor Task 3
+Reading humidity Task 2
+Reading humidity Task 2
+Reading sensor Task 3
+Reading humidity Task 2
+Reading humidity Task 2
+Reading sensor Task 3
+E (5272) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+E (5272) task_wdt:  - IDLE (CPU 0)
+E (5272) task_wdt: Tasks currently running:
+E (5272) task_wdt: CPU 0: Sensor reading
+E (5272) task_wdt: Print CPU 0 (current core) backtrace
+Print CPU 0 (current core) registers
+--- Stack dump detected
+Core  0 register dump:
+MEPC    : 0x400462e0  RA      : 0x42008408  SP      : 0x3fc91780  GP      : 0x3fc8bc00
+--- 0x400462e0: ets_delay_us in ROM
+0x42008408: Task3 at /home/zenithsiz/Uni/Y6P2/semb/projects/proj7/main/main.c:96
+
+TP      : 0x3fc917c0  T0      : 0x00000000  T1      : 0x3fc913dc  T2      : 0x00000000
+S0/FP   : 0x3c024744  S1      : 0x00000000  A0      : 0x1312d000  A1      : 0x00000000
+A2      : 0x00000000  A3      : 0x00000002  A4      : 0x28e4ace7  A5      : 0x3253ddb5
+A6      : 0x60023000  A7      : 0x00000000  S2      : 0x00000000  S3      : 0x00000000
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000
+T3      : 0x00000000  T4      : 0x00000000  T5      : 0x00000000  T6      : 0x00000000
+MSTATUS : 0x00000000  MTVEC   : 0x00000000  MCAUSE  : 0x00000000  MTVAL   : 0x403845a6
+--- 0x403845a6: vPortTaskWrapper at /opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:258
+
+MHARTID : 0x00000000
+Reading humidity Task 2
+Reading sensor Task 3
+Reading humidity Task 2
